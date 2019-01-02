@@ -18,11 +18,10 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         comicViewModel
             .getComics()
-            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
             .toDriver()
             .drive(tableView.rx.items(cellIdentifier: "PlainCell", cellType: PlainTableViewCell.self)){ (index, comic, cell) in
-            cell.bind(comic: comic)
-        }.disposed(by: bag)
-    
+                cell.bind(comic: comic)
+            }
+            .disposed(by: bag)
     }
 }
