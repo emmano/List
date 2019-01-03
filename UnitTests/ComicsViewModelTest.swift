@@ -25,7 +25,7 @@ class ComicsViewModelTest: XCTestCase {
         testObject = nil
     }
 
-    func testExample() {
+    func test_getComics() {
         let testObserver: TestableObserver<Array<ComicModel>> = testScheduler.createObserver([ComicModel].self)
         testObject.getComics().toDriver().drive(testObserver).disposed(by: bag)
         
@@ -40,6 +40,4 @@ class ComicsViewModelTest: XCTestCase {
            Recorded.next(10, comicsList)
         ])
     }
-
-
 }

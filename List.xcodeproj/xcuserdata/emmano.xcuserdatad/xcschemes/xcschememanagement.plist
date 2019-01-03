@@ -7,11 +7,11 @@
 		<key>ComicsViewModelTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>List.xcscheme</key>
+		<key>List.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -24,6 +24,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7902C9FF21DEABFC00BA2B42</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79095C4321D5AFD400E87CB8</key>
 		<dict>
 			<key>primary</key>

@@ -25,7 +25,7 @@ target 'List' do
 end
 
 target 'UnitTests' do
-    platform :macos, '10.13'
+    platform :osx, '10.13'
     
     use_frameworks!
     pod 'RxSwift'

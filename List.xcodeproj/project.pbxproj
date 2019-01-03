@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1EE87041A49FBCBC5C4CBB65 /* Pods_ListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3617AC546AEE5ED02A029A50 /* Pods_ListUITests.framework */; };
 		6415846C123816CAC5AED279 /* Pods_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421CE69AD0F7D60B918327A8 /* Pods_List.framework */; };
-		7902CA0321DEABFC00BA2B42 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7902CA0221DEABFC00BA2B42 /* UnitTests.swift */; };
 		7902CA0921DEAE4B00BA2B42 /* ComicsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C9621DDB80C001B281E /* ComicsViewModelTest.swift */; };
 		7902CA0A21DEAE8300BA2B42 /* ComicsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C8021DC4ACB001B281E /* ComicsRepository.swift */; };
 		7902CA0B21DEAE8300BA2B42 /* ComicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C8221DC4C08001B281E /* ComicsViewModel.swift */; };
@@ -18,6 +17,7 @@
 		7902CA0E21DEAEEB00BA2B42 /* RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C8621DC4EFD001B281E /* RxExtensions.swift */; };
 		7902CA0F21DEAF1200BA2B42 /* ComicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C3ECA921D6D9E5002831BE /* ComicService.swift */; };
 		7902CA1021DEAF1200BA2B42 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C8B21DC5AED001B281E /* Models.swift */; };
+		7902CA1121DEBA6200BA2B42 /* ComicsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C9921DDBC61001B281E /* ComicsRepositoryMock.swift */; };
 		79095C4821D5AFD400E87CB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79095C4721D5AFD400E87CB8 /* AppDelegate.swift */; };
 		79095C4A21D5AFD400E87CB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79095C4921D5AFD400E87CB8 /* ViewController.swift */; };
 		79095C4D21D5AFD400E87CB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79095C4B21D5AFD400E87CB8 /* Main.storyboard */; };
@@ -30,8 +30,6 @@
 		791F7C8721DC4EFD001B281E /* RxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C8621DC4EFD001B281E /* RxExtensions.swift */; };
 		791F7C8921DC5329001B281E /* PlainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C8821DC5329001B281E /* PlainTableViewCell.swift */; };
 		791F7C8C21DC5AED001B281E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C8B21DC5AED001B281E /* Models.swift */; };
-		791F7C9721DDB80C001B281E /* ComicsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C9621DDB80C001B281E /* ComicsViewModelTest.swift */; };
-		791F7C9A21DDBC61001B281E /* ComicsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C9921DDBC61001B281E /* ComicsRepositoryMock.swift */; };
 		791F7C9C21DDD328001B281E /* ComicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791F7C9B21DDD328001B281E /* ComicModel.swift */; };
 		79C3ECAA21D6D9E5002831BE /* ComicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C3ECA921D6D9E5002831BE /* ComicService.swift */; };
 		7E8475EBF98F0A5B91D65EC6 /* Pods_UnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B22D4746E144B3B3C28D8D2 /* Pods_UnitTests.framework */; };
@@ -66,7 +64,6 @@
 		7776E2573AD6C2C1E9E5F18A /* Pods-ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListTests/Pods-ListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		77AE49869818D416A3F21930 /* Pods-ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListTests/Pods-ListTests.release.xcconfig"; sourceTree = "<group>"; };
 		7902CA0021DEABFC00BA2B42 /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7902CA0221DEABFC00BA2B42 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
 		7902CA0421DEABFC00BA2B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7903A9A821DC2CFA00918931 /* RxAtomic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxAtomic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7903A9AA21DC2CFA00918931 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,7 +151,8 @@
 		7902CA0121DEABFC00BA2B42 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				7902CA0221DEABFC00BA2B42 /* UnitTests.swift */,
+				791F7C9821DDBC3D001B281E /* Mocks */,
+				791F7C9621DDB80C001B281E /* ComicsViewModelTest.swift */,
 				7902CA0421DEABFC00BA2B42 /* Info.plist */,
 			);
 			path = UnitTests;
@@ -203,10 +201,8 @@
 		79095C5B21D5AFD400E87CB8 /* ListTests */ = {
 			isa = PBXGroup;
 			children = (
-				791F7C9821DDBC3D001B281E /* Mocks */,
 				79095C5C21D5AFD400E87CB8 /* ListTests.swift */,
 				79095C5E21D5AFD400E87CB8 /* Info.plist */,
-				791F7C9621DDB80C001B281E /* ComicsViewModelTest.swift */,
 			);
 			path = ListTests;
 			sourceTree = "<group>";
@@ -640,7 +636,6 @@
 				7902CA0B21DEAE8300BA2B42 /* ComicsViewModel.swift in Sources */,
 				7902CA0C21DEAE8300BA2B42 /* ComicModel.swift in Sources */,
 				7902CA0921DEAE4B00BA2B42 /* ComicsViewModelTest.swift in Sources */,
-				7902CA0321DEABFC00BA2B42 /* UnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,8 +659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				791F7C9A21DDBC61001B281E /* ComicsRepositoryMock.swift in Sources */,
-				791F7C9721DDB80C001B281E /* ComicsViewModelTest.swift in Sources */,
+				7902CA1121DEBA6200BA2B42 /* ComicsRepositoryMock.swift in Sources */,
 				79095C5D21D5AFD400E87CB8 /* ListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -724,6 +718,8 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				EXPANDED_CODE_SIGN_IDENTITY = "-";
+				EXPANDED_CODE_SIGN_IDENTITY_NAME = "-";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -749,6 +745,8 @@
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				EXPANDED_CODE_SIGN_IDENTITY = "-";
+				EXPANDED_CODE_SIGN_IDENTITY_NAME = "-";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = UnitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
