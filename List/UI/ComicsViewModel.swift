@@ -9,13 +9,13 @@
 import RxSwift
 class ComicsViewModel {
     
-    private let comicsRepository: ComicsRepository
+    private let comicsRepository: ComicsRepositoryProtocol
     
-    init(comicsRepository: ComicsRepository) {
+    init(comicsRepository: ComicsRepositoryProtocol) {
         self.comicsRepository = comicsRepository
     }
     
-    func getComics() -> Observable<Array<Comic>> {
+    func getComics() -> Observable<Array<ComicModel>> {
         return comicsRepository.getComics()
     }
 }

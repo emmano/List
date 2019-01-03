@@ -10,9 +10,9 @@ import UIKit
 
 class PlainTableViewCell: UITableViewCell {
 
-    func bind(comic: Comic) {
+    func bind(comic: ComicModel) {
         self.textLabel?.text = comic.title
-        self.load(url: comic.thumbnail.url)
+        self.load(url: comic.imageURL)
     }
     
     private func load(url: URL) {

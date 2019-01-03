@@ -11,6 +11,8 @@ target 'List' do
 
   target 'ListTests' do
     inherit! :search_paths
+    pod 'RxTest'
+    pod 'RxBlocking'
     # Pods for testing
   end
 
