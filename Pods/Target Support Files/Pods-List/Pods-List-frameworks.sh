@@ -143,16 +143,16 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic-iOS/RxAtomic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxOptional-iOS/RxOptional.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxAtomic-iOS/RxAtomic.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxCocoa-iOS/RxCocoa.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxOptional-iOS/RxOptional.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift-iOS/RxSwift.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

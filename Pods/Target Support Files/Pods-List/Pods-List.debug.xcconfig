@@ -1,8 +1,8 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/RxAtomic" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa" "${PODS_CONFIGURATION_BUILD_DIR}/RxOptional" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/RxAtomic-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/RxOptional-iOS" "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift-iOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxAtomic/RxAtomic.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxOptional/RxOptional.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers"
+OTHER_CFLAGS = $(inherited) -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxAtomic-iOS/RxAtomic.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa-iOS/RxCocoa.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxOptional-iOS/RxOptional.framework/Headers" -iquote "${PODS_CONFIGURATION_BUILD_DIR}/RxSwift-iOS/RxSwift.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -framework "RxAtomic" -framework "RxCocoa" -framework "RxOptional" -framework "RxSwift"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = ${BUILD_DIR}

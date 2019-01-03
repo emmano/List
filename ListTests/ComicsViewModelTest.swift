@@ -10,8 +10,6 @@ import XCTest
 import RxSwift
 import RxTest
 
-@testable import List
-
 class ComicsViewModelTest: XCTestCase {
     
     var testObject: ComicsViewModel!

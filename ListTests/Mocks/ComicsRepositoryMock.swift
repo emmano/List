@@ -7,7 +7,6 @@
 //
 
 import RxSwift
-@testable import List
 
 class ComicsRepositoryMock : ComicsRepositoryProtocol {
     private let data: ReplaySubject<Array<ComicModel>>
