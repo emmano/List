@@ -14,6 +14,19 @@ extension ObservableType {
         return self
             .asDriver { _ in
                 return Driver<E>.empty()
+        }
     }
 }
+
+extension Observable where Element == (HTTPURLResponse, Data)  {
+    func decode<T : Decodable>() -> Observable<T> {
+        return self.map { (responseData) -> T in
+            let data = responseData.1
+            do {
+                let t = try JSONDecoder().decode(T.self, from: data)
+                return t
+            } catch  {}
+            return NSObject() as! T
+        }
+    }
 }

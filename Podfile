@@ -8,6 +8,8 @@ target 'List' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'RxOptional'
+    pod 'Alamofire'
+    pod 'RxAlamofire'
     # Pods for List
     
     target 'ListTests' do
