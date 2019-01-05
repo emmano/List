@@ -35,5 +35,7 @@ target 'UnitTests' do
     pod 'RxOptional'
     pod 'RxTest'
     pod 'RxBlocking'
+    pod 'Alamofire'
+    pod 'RxAlamofire'
     # Pods for testing
 end

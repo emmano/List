@@ -20,13 +20,11 @@ extension ObservableType {
 
 extension Observable where Element == (HTTPURLResponse, Data)  {
     func decode<T : Decodable>() -> Observable<T> {
-        return self.map { (responseData) -> T in
-            let data = responseData.1
-            do {
-                let t = try JSONDecoder().decode(T.self, from: data)
-                return t
-            } catch  {}
-            return NSObject() as! T
+        return self.map {
+            guard let t = try? JSONDecoder().decode(T.self, from: $0.1) else {
+                return NSObject() as! T
+            }
+            return t
         }
     }
 }

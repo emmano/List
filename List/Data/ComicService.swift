@@ -11,7 +11,7 @@ import RxSwift
 import RxAlamofire
 
 class ComicService {
-    func getComics(url: URL = comicsURLString) -> Observable<Array<Comic>> {
+    func getComics(url: URL = comicsURLString) -> Observable<[Comic]> {
         
         return RxAlamofire.requestData(.get, url)
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .default))
